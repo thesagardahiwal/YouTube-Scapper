@@ -1,0 +1,51 @@
+<% if (error) { %>
+    <div class="alert alert-danger">
+        <p>
+            <%= error %>
+        </p>
+    </div>
+    <% } else if (data.video_details) { %>
+        <!-- Video-specific card -->
+        <div class="card shadow">
+            <img height="400px" width="500px"
+                src="https://img.youtube.com/vi/<%= data.video_details.videoId %>/maxresdefault.jpg"
+                class="card-img-top img-fluid img-thumbnail" alt="<%= data.video_details.title %>">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= data.video_details.title %>
+                </h5>
+                <p class="card-text">Channel: <strong>
+                        <%= data.video_details.channel %>
+                    </strong></p>
+                <p class="card-text">Views: <%= data.video_details.views %>
+                </p>
+                <p class="card-text">Likes: <%= data.video_details.likes %>
+                </p>
+                <p class="card-text">Description: <%= data.video_details.description %>
+                </p>
+                <a href="https://youtube.com/watch?v=<%= data.video_details.videoId %>" target="_blank"
+                    class="btn btn-primary">Watch Now</a>
+            </div>
+        </div>
+        <% } else if (data.channel_details) { %>
+            <!-- Channel-specific card -->
+            <div class="card shadow">
+                <div class="card-body">
+                    <img style="height: 150px; width: 150px;"
+                        src=<%= data.channel_details.thumbnail.url%>
+                        class="card-img-top rounded img-thumbnail img-fluid" alt="<%= data.channel_details.title %>">
+                    <h5 class="card-title">
+                        <%= data.channel_details.title %>
+                    </h5>
+                    <p class="card-text">Subscribers: <%= data.channel_details.subscribers %>
+                    </p>
+                    <p class="card-text">Total Views: <%= data.channel_details.views %>
+                    </p>
+                    <p class="card-text">Videos: <%= data.channel_details.videos %>
+                    </p>
+                    <p class="card-text">Description: <%= data.channel_details.description %>
+                    </p>
+                    <a href="<%= data.channel_details.url %>" target="_blank" class="btn btn-primary">Visit Channel</a>
+                </div>
+            </div>
+            <% } %>
