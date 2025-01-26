@@ -48,16 +48,18 @@ A simple **Node.js** application that fetches and displays detailed information 
 
 ## 📦 Usage
 
-- 1. Input a valid YouTube video or channel URL in the provided form.
-- 2. Click Scrape to fetch details.
-- 3. View a responsive card with:
-- 4. Video: Title, description, views, likes, and thumbnail.
-- 5. Channel: Name, description, subscriber count, and more.
-- 6. Download the card for sharing or marketing purposes.
+ - 1. Input a valid YouTube video or channel URL in the provided form.
+ - 2. Click Scrape to fetch details.
+ - 3. View a responsive card with:
+ - 4. Video: Title, description, views, likes, and thumbnail.
+ - 5. Channel: Name, description, subscriber count, and more.
+ - 6. Download the card for sharing or marketing purposes.
 
 ## Live Demo
 1. **Demo Video**
-Uploading Youtube-Scrapper-Demo.mp4…
+
+https://github.com/user-attachments/assets/36f48364-92fe-4766-9539-171fb8bdb29e
+
 
 2. **Visit Live**
    - Vist Here [https://youtube-scapper.onrender.com]
